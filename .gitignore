@@ -1,2 +1,4 @@
 #ignore .pro.user files
 *.pro.user
+
+*-Desktop-Debug

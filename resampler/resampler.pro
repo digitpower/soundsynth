@@ -1,6 +1,7 @@
 CONFIG -= qt
 
 TEMPLATE = lib
+TARGET = /usr/local/lib/soundsynth/resampler
 DEFINES += RESAMPLER_LIBRARY
 
 CONFIG += c++11

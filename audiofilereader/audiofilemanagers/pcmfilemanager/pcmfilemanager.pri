@@ -1,3 +1,4 @@
 HEADERS	+= $$PWD/pcmfilemanager.h \
-           $$PWD/../filestructs.h
-INCLUDEPATH += $$PWD $$PWD/../../../lib $$PWD/../audiofilemanager
+           $$PWD/../filestructs.h \
+           $$PWD/../audiofilemanager/audiofilemanager.h
+INCLUDEPATH += $$PWD $$PWD/../../../lib

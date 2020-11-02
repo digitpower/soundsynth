@@ -1,1 +1,2 @@
-SOURCES += $$PWD/alawfilemanager.cpp
+SOURCES += $$PWD/alawfilemanager.cpp \
+           $$PWD/../audiofilemanager/audiofilemanager.cpp

@@ -6,10 +6,8 @@ INCLUDEPATH += $$PWD $$PWD/../../../lib
 
 
 include($$PWD/../pcmfilemanager/pcmfilemanager.pri)
-include($$PWD/../pcmfilemanager/pcmfilemanager_sources.pri)
-LIBS += -L$$PWD/../pcmfilemanager -lpcmfilemanager
+LIBS += -L/usr/local/lib/soundsynth -lpcmfilemanager
 
 include($$PWD/../alawfilemanager/alawfilemanager.pri)
-include($$PWD/../alawfilemanager/alawfilemanager_sources.pri)
-LIBS += -L$$PWD/../alawfilemanager -lalawfilemanager
+LIBS += -L/usr/local/lib/soundsynth -lalawfilemanager
 

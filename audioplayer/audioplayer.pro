@@ -26,7 +26,7 @@ SOURCES += audioengine.cpp \
 include($$PWD/../lib/lib.pri)
 include($$PWD/../audiofilereader/audiofilereader.pri)
 include($$PWD/../ugen_loudness/ugen_loudness.pri)
-include($$PWD/../tcpstreamlistener/tcpstreamlistener.pri)
+
 
 #message($$SOURCES)
 #LIST = 1 2 3
@@ -37,8 +37,6 @@ include($$PWD/../tcpstreamlistener/tcpstreamlistener.pri)
 
 
 LIBS += -lportaudio
-LIBS += -L$$PWD/../lib -lsoundsynth
-LIBS += -L$$PWD/../wavreader -lwavreader
-LIBS += -L$$PWD/../audiofilereader -laudiofilereader
-LIBS += -L$$PWD/../tcpstreamlistener -ltcpstreamlistener
-LIBS += -L$$PWD/../ugen_loudness -lugen_loudness
+LIBS += -L/usr/local/lib/soundsynth -lsoundsynth
+LIBS += -L/usr/local/lib/soundsynth -laudiofilereader
+LIBS += -L/usr/local/lib/soundsynth -lugen_loudness

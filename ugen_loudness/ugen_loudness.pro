@@ -7,7 +7,7 @@
 QT       -= core gui
 
 QMAKE_CXXFLAGS += -std=c++11
-TARGET = ugen_loudness
+TARGET = /usr/local/lib/soundsynth/ugen_loudness
 TEMPLATE = lib
 
 DEFINES += UGEN_LOUDNESS_LIBRARY

@@ -1,1 +1,2 @@
-SOURCES += $$PWD/pcmfilemanager.cpp
+SOURCES += $$PWD/pcmfilemanager.cpp \
+           $$PWD/../audiofilemanager/audiofilemanager.cpp

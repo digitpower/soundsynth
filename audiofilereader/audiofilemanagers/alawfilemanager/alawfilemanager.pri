@@ -1,8 +1,9 @@
 HEADERS	+= $$PWD/alawfilemanager.h \
-           $$PWD/../filestructs.h
-INCLUDEPATH += $$PWD $$PWD/../../../lib $$PWD/../audiofilemanager
+           $$PWD/../filestructs.h \
+           $$PWD/../audiofilemanager/audiofilemanager.h
+INCLUDEPATH += $$PWD $$PWD/../../../lib
 
 
 include($$PWD/../../../resampler/resampler.pri)
 LIBS+=-L/usr/lib -lsamplerate
-LIBS += -L$$PWD/../../../resampler -lresampler
+LIBS += -L/usr/local/lib/soundsynth -lresampler
