@@ -5,5 +5,6 @@ INCLUDEPATH += $$PWD $$PWD/../../../lib
 
 
 include($$PWD/../../../resampler/resampler.pri)
-LIBS+=-L/usr/lib -lsamplerate
-LIBS += -L/usr/local/lib/soundsynth -lresampler
+include($$PWD/../alawdecoder/alawdecoder.pri)
+LIBS += -L/usr/lib -lsamplerate
+LIBS += -L/usr/local/lib/soundsynth -lresampler -lalawdecoder

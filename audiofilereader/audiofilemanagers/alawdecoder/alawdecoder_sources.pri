@@ -1,0 +1,2 @@
+SOURCES += $$PWD/alawdecoder.cpp
+

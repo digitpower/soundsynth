@@ -18,9 +18,9 @@ public:
     int  readData(SAMPLE* data, EngineAudioChunk &engineAudioChunk);
     int  seek(double seekRatio);
     long getFrameCount();
-public:
-    void decodeAlaw(ENGINE_SAMPLE *decodedData, char* sourceData, int srcLength);
-    int16_t decodeAlawByte(int8_t number);
+//public:
+//    void decodeAlaw(ENGINE_SAMPLE *decodedData, char* sourceData, int srcLength);
+//    int16_t decodeAlawByte(int8_t number);
 private:
     void mergeData(SAMPLE *decodedMerged, ENGINE_SAMPLE** decodedChannels, int frameCount);
     SAMPLE floatToShort(ENGINE_SAMPLE engineSample);
