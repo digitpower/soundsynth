@@ -1,5 +1,5 @@
 #ifdef GUI_SUPPORT
-#include "mediaplayer.h"
+#include "gui/mediaplayer.h"
 #else
 #include <string.h>
 #include "audioengine.h"

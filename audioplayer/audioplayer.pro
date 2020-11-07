@@ -9,13 +9,7 @@ INCLUDEPATH += .
 QMAKE_CXXFLAGS += -std=c++11
 
 
-include($$PWD/../soundsynth.pri)
-contains(DEFINES, GUI_SUPPORT) {
-    QT += widgets
-    HEADERS += mediaplayer.h
-    SOURCES += mediaplayer.cpp
-    FORMS += mediaplayer.ui
-}
+include($$PWD/../gui/gui.pri)
 
 # Input
 HEADERS += audioengine.h
